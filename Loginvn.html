@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng nhập</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        #Menu{
+            position: fixed;
+            width: 100%;
+            top: 0;
+            margin-left: -10px;
+            display: flex;
+            justify-content: space-between;
+            padding-left: 10px;
+            padding-right: 10px;
+            align-items: center;
+            background-color: rgba(61, 54, 54, 0.911);
+            border-radius: 10px;
+        }
+        #Menu a{
+            text-decoration: none;
+            color: white;
+        }
+        #Menu1 a{
+            padding-left: 20px;
+        }
+        #Signin{
+            position: relative;
+            left: -15px;
+            background-color: rgb(49, 55, 56);
+            border-radius: 10px;
+        }
+        #Login{
+            position: relative;
+            left: -15px;
+            background-color: rgb(3, 37, 44);
+            border-radius: 10px;
+        }
+        form h2{
+            background-color: rgba(61, 54, 54, 0.911);
+            border-radius: 10px;
+            height: 35px;
+        }
+        form{
+            margin-top: 10%;
+            margin-left: 35%;
+            width: 400px;
+            height: 320px;
+            text-align: center;
+            background-color: rgba(61, 54, 54, 0.911);
+            border-radius: 10px;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        a:hover{
+            cursor: pointer;
+            color: grey;
+        }
+        #login{
+            background-color: rgb(92, 87, 79);
+            width: 300px;
+            height: 25px;
+            border-radius: 10px;
+        }
+        #login :hover{
+            cursor: pointer;
+            opacity: 0.9;
+        }
+        #Submit{
+            width: 200px;
+            height: 30px;
+            background-color: rgba(30, 29, 29, 0.719);
+            color: white;
+            border-radius: 10px;
+        }
+        #Submit:hover{
+            background-color: rgb(59, 51, 51);
+        }
+    </style>
+</head>
+<body>
+    <div id="Menu">
+        <p id="Menu1">
+            <a href="http://127.0.0.1:5500/project/ISGameMarketvn.html"><i class="fa fa-bars" aria-hidden="true"></i></a>
+            <a href="http://127.0.0.1:5500/project/Newsvn.html">Tin tức</a>
+            <a href="http://127.0.0.1:5500/project/Marketvn.html">Sản phẩm</a>
+            <a href="http://127.0.0.1:5500/project/Languagevn.html"><i class="fa fa-globe" aria-hidden="true"></i></a>
+            <a href="http://127.0.0.1:5500/project/My%20accountvn.html"><i class="fa fa-address-book-o" aria-hidden="true"></i> Tài khoản của tôi</a>
+        </p>
+        <p>
+            <h2 style="color: #ffffff; text-align: center; position: relative; left: -98px;">IS<span style="color: #ffcc66">GameMarket</span></h2>
+        </p>
+        <p>
+            <button id="Signin"><a href="http://127.0.0.1:5500/project/Signinvn.html">Đăng kí</a></button>
+            <button id="Login"><a href="http://127.0.0.1:5500/project/Loginvn.html">Đăng nhập</a></button>
+        </p>
+    </div>
+    <div class="video-container">
+        <video autoplay muted loop id="background-video">
+            <source src="1722969-uhd_3840_2160_25fps.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <form action="">
+        <h2>Đăng nhập</h2>
+        <h3>Tên người dùng</h3><br>
+        <label for="Username"><input type="text" placeholder="Hãy điền tên người dùng" minlength="6" maxlength="18" required></label>
+        <h3>Mật khẩu</h3><br>
+        <label for="Password"><input type="password" placeholder="Hãy điền mật khẩu" minlength="6" maxlength="18" required></label><br><br><br>
+        <input style="margin-top: 20px;" type="submit" id="Submit" value="Hoàn tất"><br><br><br>
+        <button id="login"><a href="http://127.0.0.1:5500/project/ISGameMarketvn.html">Đăng nhập</a></button>
+    </form>
+</body>
+</html>
