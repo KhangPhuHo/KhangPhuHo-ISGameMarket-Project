@@ -17,8 +17,9 @@
             padding-left: 10px;
             padding-right: 10px;
             align-items: center;
-            background-color: rgba(61, 54, 54, 0.911);
+            background-color: rgba(46, 46, 46, 0.911);
             border-radius: 10px;
+            z-index: 1000;
         }
         #Menu a{
             text-decoration: none;
@@ -71,6 +72,10 @@
             cursor: pointer;
             opacity: 0.9;
         }
+        input{
+            width: 230px;
+            height: 30px;
+        }
         #Submit{
             width: 200px;
             height: 30px;
@@ -108,9 +113,9 @@
     </div>
     <form action="">
         <h2>Log in</h2>
-        <h3>Username</h3><br>
+        <h3>Username</h3>
         <label for="Username"><input type="text" placeholder="Enter Username" minlength="6" maxlength="18" required></label>
-        <h3>Password</h3><br>
+        <h3>Password</h3>
         <label for="Password"><input type="password" placeholder="Enter Password" minlength="6" maxlength="18" required></label><br><br><br>
         <input style="margin-top: 20px;" type="submit" id="Submit" value="Submit"><br><br><br>
         <button id="login"><a href="isgamemarket.html">Log in</a></button>
