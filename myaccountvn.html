@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles.css">
     <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
         #Menu{
             position: fixed;
             width: 100%;
@@ -27,6 +30,9 @@
         }
         #Menu1 a{
             padding-left: 20px;
+        }
+        #Menu1{
+          margin-right: 160px;
         }
         #Signin{
             position: relative;
@@ -72,21 +78,21 @@
 </head>
 <body>
     <div id="Menu">
-        <p id="Menu1">
-            <a href="isgamemarketvn.html"><i class="fa fa-bars" aria-hidden="true"></i></a>
-            <a href="newsvn.html">Tin tức</a>
-            <a href="marketvn.html">Sản phẩm</a>
-            <a href="languagevn.html"><i class="fa fa-globe" aria-hidden="true"></i></a>
-            <a href="myaccountvn.html"><i class="fa fa-address-book-o" aria-hidden="true"></i> Tài khoản của tôi</a>
-        </p>
         <p>
-          <h2 style="color: #ffffff; text-align: center; position: relative; left: -98px;">IS<span style="color: #ffcc66">GameMarket</span></h2>
+          <h2 style="color: #ffffff;">IS<span style="color: #ffcc66">GameMarket</span></h2>
         </p>
-        <p>
-            <button id="Signin"><a href="signinvn.html">Đăng kí</a></button>
-            <button id="Login"><a href="loginvn.html">Đăng nhập</a></button>
-        </p>
-    </div><br><br><br><br><br><br><br><br><br>
+          <p id="Menu1">
+              <a href="isgamemarket.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
+              <a href="news.html"><i class="fa fa-newspaper-o" aria-hidden="true"></i> News</a>
+              <a href="market.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Market</a>
+              <a href="language.html"><i class="fa fa-globe" aria-hidden="true"></i> Language</a>
+              <a href="myaccount.html"><i class="fa fa-address-book-o" aria-hidden="true"></i> My Account</a>
+          </p>
+          <p>
+              <button id="Signin"><a href="signin.html"><i class="fa fa-sign-in" aria-hidden="true"></i> Sign in</a></button>
+              <button id="Login"><a href="login.html"><i class="fa fa-sign-in" aria-hidden="true" style="color: #414345;"></i> Log in</a></button>
+          </p>
+      </div><br><br><br><br><br><br><br><br><br>
     <div class="video-container">
         <video autoplay muted loop id="background-video">
             <source src="1722969-uhd_3840_2160_25fps.mp4" type="video/mp4">
@@ -99,7 +105,7 @@
             <h2>Tên của bạn</h2>
             <h3>Khách</h3><br><br>
             <h2>Những thông tin giới thiệu về bạn:</h2>
-            <input type="text" minlength="10" maxlength="1000" placeholder="Write here"></label>
+            <textarea name="" id="" cols="30" rows="5" minlength="10" maxlength="1000" placeholder="Write here"></textarea>
     </form>
 </body>
 </html>
