@@ -68,17 +68,6 @@
             text-align: justify;
             margin-left: 120px;
         }
-        #signin{
-            background-color: rgb(92, 87, 79);
-            width: 300px;
-            height: 25px;
-            border-radius: 10px;
-            margin-top: 30px;
-        }
-        #signin :hover{
-            cursor: pointer;
-            opacity: 0.9;
-        }
         a{
             text-decoration: none;
             color: white;
@@ -126,15 +115,14 @@
     <form action="">
         <h2>Sign in</h2>
         <h3>Username:</h3>
-        <label for="Username"><input type="text" placeholder="Enter Username" minlength="6" maxlength="18" required></label>
+        <label for="Username"><input type="text" placeholder="Enter Username" minlength="6" maxlength="18" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" title="Please include at least 1 uppercase character, 1 lowercase character, and 1 number." required></label>
         <h3>Email:</h3>
         <label for="Email"><input type="email" placeholder="Enter Email" required></label>
         <h3>Password:</h3>
-        <label for="Password"><input type="password" placeholder="Enter Password" minlength="6" maxlength="18" required></label>
+        <label for="Password"><input type="password" placeholder="Enter Password" minlength="6" maxlength="18" pattern="^(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" title="Please include at least 1 uppercase character, 1 lowercase character." required></label>
         <h3>Confirm Password:</h3>
-        <label for="Confirm"><input type="password" placeholder="Enter Password" minlength="6" maxlength="18" required></label><br>
-        <input style="margin-top: 20px;" type="submit" id="Submit" value="Submit"><br><br><br>
-        <button id="signin"><a href="isgamemarket.html">Sign in</a></button>
+        <label for="Confirm"><input type="password" placeholder="Enter Password" minlength="6" maxlength="18" pattern="^(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" title="Please include at least 1 uppercase character, 1 lowercase character." required></label><br>
+        <input style="margin-top: 20px;" type="submit" id="Submit" value="Submit">
     </form>
 </body>
 </html>
